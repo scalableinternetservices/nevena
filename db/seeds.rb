@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+1000.times do |i|
+  a = Author.create(first_name: "First #{i}.", last_name: "Last #{i}", email: "author#{i}@example.com")
+  a.save!
+end
+
+1000.times do |i|
+  s = Story.create(description: "Description for stories #{i}.", title: "Story  #{i}'s title", author: Author.find(i+1))
+  s.save!
+end

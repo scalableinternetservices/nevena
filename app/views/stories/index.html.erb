@@ -1,0 +1,7 @@
+<h1>Welcome to Stories!</h1>
+
+<% @stories.each do |story| %>
+  <p><h2><%= story.title %></h2></p>
+  <p><%= story.description %></p>
+  <p><%= story.author.email %></p>
+<% end %>

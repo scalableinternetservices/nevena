@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: authors
 #
 #  id         :bigint           not null, primary key
 #  email      :string
@@ -11,7 +11,7 @@
 #
 require "test_helper"
 
-class UserTest < ActiveSupport::TestCase
+class AuthorTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
