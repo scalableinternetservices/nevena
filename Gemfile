@@ -22,3 +22,5 @@ group :development do
   gem "web-console"
 end
 
+
+gem "shakapacker", "= 6.5"
